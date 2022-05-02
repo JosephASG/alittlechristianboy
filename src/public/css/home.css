@@ -312,6 +312,7 @@ html {
     .card__father__alpha {
         width: 300px;
         height: 400px;
+        -webkit-box-reflect: above 15px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
     }
     .tarjeta__3d__alpha,
     .bg__alpha{
@@ -1111,7 +1112,7 @@ section:nth-child(1){
     position: relative;
     width: 100%;
     min-height: 100vh;
-        background: url(https://res.cloudinary.com/primalappsje/image/upload/v1650597152/primal/background-dark-cross-7_cfe9wx.jpg);
+        background: url(https://res.cloudinary.com/primalappsje/image/upload/v1651533559/primal/background-dark-cross-7-min_ocg2vf.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1142,7 +1143,7 @@ section:nth-child(1){
 @media screen and (max-width:650px){
     section:nth-child(1){
         padding: 40px;
-        background: url(https://res.cloudinary.com/primalappsje/image/upload/v1650597152/primal/background-dark-cross-7_cfe9wx.jpg);
+        background: url(https://res.cloudinary.com/primalappsje/image/upload/v1651533559/primal/background-dark-cross-7-min_ocg2vf.jpg);
         background-size: cover;
         background-position: center;
         align-items: center;
