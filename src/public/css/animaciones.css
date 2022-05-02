@@ -15,6 +15,10 @@
     animation: logoPri 5s infinite
 }
 
+.container-logoanim{
+    padding: 100px 0 50px 0;
+}
+
 .logoPrimal:hover .footer-logo-top-label {
     position: relative;
     margin: 0 auto 12px;
@@ -76,7 +80,12 @@
     }
 }
 
+.container-project-cards{
+    padding: 100px 0 50px 0;
+}
+
 .container__cards {
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     margin: auto;
     display: flex;
@@ -103,7 +112,11 @@
     width: 100%;
     height: 200px;
     border-radius: 14px;
-    overflow: hidden
+    overflow: hidden;
+}
+
+.__card p{
+    padding: 15px 0 15px 0;
 }
 
 .__card:hover {
@@ -307,15 +320,19 @@
     align-items: center
 }
 
+.container-lp{
+    padding: 10px 0 100px 0;
+}
+
 .letras__primal__s {
     margin-top: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: rgba(255, 255, 255, .5);
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     justify-content: center;
-    text-align: center
+    text-align: center;
 }
 
 .toggle__ {
@@ -351,6 +368,7 @@
 }
 
 .sidebar__ {
+    font-family: 'Josefin Sans', sans-serif;
     position: fixed;
     top: 0;
     right: 0;
@@ -418,11 +436,15 @@
     .sidebar__ ul li a {
         font-size: 2em
     }
+    .containerText{
+        padding: 0 10px 0 10px;
+    }
 }
 
 .containerText {
+    font-size: 3.7rem;
     width: 100%;
-    margin-top: 0;
-    place-items: center;
+    padding: 0 50px 0 50px ;
+    text-align: center;
     overflow: hidden
 }
