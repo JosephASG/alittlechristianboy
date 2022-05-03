@@ -38,6 +38,7 @@
     padding: 40px;
     border: 2px solid #ffcc74;
     box-shadow: inset 20px 20px 20px #0000008c;
+    left: 5%;
 }
 
 .inner-skills h3{
@@ -46,7 +47,7 @@
     text-align: center;
 }
 
-.each-skills{
+.each-skills{   
     position: relative;
     width: 600px;
     height: 50%;
@@ -117,10 +118,13 @@
 
 @media screen and (max-width:991px) {
     .inner-skills{
+        margin-top: 50px;
         position: relative;
         padding: 0 25px 0 25px;
+        left: 0;
     }
     .each-skills{
+        margin-top: 50px;
         position: relative;
         width: 300px;
         height: auto;
@@ -155,6 +159,7 @@
         margin: -100px 25px 0 25px;
         text-align: center;
     }
+
 }
 
 .section__flex{
@@ -255,4 +260,33 @@ svg circle:nth-child(2){
 }
 .card-progress:nth-child(2) svg circle:nth-child(2){
     stroke-dashoffset: calc(315px - (315px * 86)/100);
+}
+
+@media screen and (min-width:991px){
+    .section-img{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms ease-in-out;
+    }
+    .container-img{
+        position: relative;
+        width: 600px;
+        height: 60%;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 500ms ease-in-out;
+    }
+    .container-img:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+        transition: all 300ms ease;
+    }
+    
 }

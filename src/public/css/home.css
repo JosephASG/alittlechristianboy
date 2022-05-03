@@ -29,14 +29,21 @@ html {
     background-color: transparent;
     padding: 15px;
     position: fixed;
+    z-index: 3;
 }
 
-.navbar a{
+.navbar a:nth-child(1){
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a:nth-child(2){
     font-size: 1.2em;
     text-decoration: none;
     color: #fff;
     padding: 0 10px 0 15px;
 }
+
 
 .container-navbar{
     display: flex;
@@ -775,14 +782,14 @@ body {
 .textoW2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center
 }
 
 .textoW2 span {
     font-family: 'Josefin Sans', sans-serif;
     list-style: none;
-    font-size: 2.3rem;
+    font-size: 2em;
     font-weight: 500;
     position: relative;
     text-align: center
@@ -1089,23 +1096,7 @@ body {
     -webkit-text-stroke: 1px #000;
     transform: translate(10px, -10px);
 }
-@media screen and (max-width:650px){
-    .body_slidebar li {
-        font-size: 1em;
-    }
-    .body_slidebar li a:hover:before{
-        color: var(--clr);
-        z-index: 1;
-        -webkit-text-stroke: 1px #000;
-        transform: translate(3px, -3px);
-    }
-    .body_slidebar li a:hover:after{
-        color: #0ff;
-        z-index: 2;
-        -webkit-text-stroke: 1px #000;
-        transform: translate(6px, -6px);
-    }
-}
+
 section:nth-child(1){
     position: relative;
     width: 100%;
@@ -1131,14 +1122,33 @@ section:nth-child(1){
 .contenido{
     max-width: 600px;
 }
+.contenido .contenido-caja {
+    transform: translateX(30%);
+}
 .contenido .contenido-caja h2{
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 85px;
+    font-size: 75px;
+    font-weight: 500;
     color: var(--text-primal);
     line-height: 1em;
 }
 @media screen and (max-width:650px){
+    .body_slidebar li {
+        font-size: 1em;
+    }
+    .body_slidebar li a:hover:before{
+        color: var(--clr);
+        z-index: 1;
+        -webkit-text-stroke: 1px #000;
+        transform: translate(3px, -3px);
+    }
+    .body_slidebar li a:hover:after{
+        color: #0ff;
+        z-index: 2;
+        -webkit-text-stroke: 1px #000;
+        transform: translate(6px, -6px);
+    }
     section:nth-child(1){
         padding: 40px;
         background: url(https://res.cloudinary.com/primalappsje/image/upload/v1651533559/primal/background-dark-cross-7-min_ocg2vf.jpg);
@@ -1146,6 +1156,15 @@ section:nth-child(1){
         background-position: center;
         align-items: center;
         justify-content: center;
+    }
+    .contenido .contenido-caja {
+        transform: translateX(0);
+    }
+    .textoW2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center
     }
     .contenido .contenido-caja h2{
         position: relative;
