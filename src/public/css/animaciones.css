@@ -108,6 +108,11 @@
     transition: all 300ms ease
 }
 
+.__card a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .cover__card {
     width: 100%;
     height: 200px;
@@ -335,21 +340,7 @@
     text-align: center;
 }
 
-.toggle__ {
-    cursor: pointer;
-    z-index: 5;
-    transition: all 300ms ease
-}
 
-.toggle__:hover {
-    transform: scale(1.15);
-    transition: all 300ms ease
-}
-
-.toggle__.active {
-    cursor: pointer;
-    z-index: 5
-}
 
 .sidebar__ {
     font-family: 'Josefin Sans', sans-serif;
