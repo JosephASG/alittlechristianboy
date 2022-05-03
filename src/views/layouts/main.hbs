@@ -60,6 +60,17 @@
     </script>
 
     <script>
+        const navMenu = document.querySelector("#navMenu");
+        navMenu.addEventListener("click", () =>{
+            navMenu.classList.toggle("active");
+        });
+        function toggleMenu__() {
+            const sidebar__ = document.querySelector(".sidebar__");
+            sidebar__.classList.toggle("active")
+        }
+    </script>
+
+    <script>
         jarallax(document.querySelectorAll('.jarallax'), {
             speed: 0.5,
         });
@@ -90,14 +101,6 @@
             backSpeed: 60,
             loop: true
         })
-    </script>
-    <script>
-        function toggleMenu__() {
-            const menutoggle = document.querySelector(".toggle__");
-            const sidebar__ = document.querySelector(".sidebar__");
-            menutoggle.classList.toggle("active")
-            sidebar__.classList.toggle("active")
-        }
     </script>
     <script>
         const position__ = document.documentElement;
