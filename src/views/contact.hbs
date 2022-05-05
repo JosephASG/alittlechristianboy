@@ -1,0 +1,51 @@
+<div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div>
+                    <h2>Información de contacto</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-map-location-dot"></i></span>
+                            <span>
+                                Calle Guayaquil entre Quijano y Ordóñez <br>
+                                Latacunga, Cotopaxi <br>
+                                Ecuador
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <span>primalappsje@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span>+593995528427</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Envía un mensaje</h2>
+                <form class="form-box" onsubmit="sendEmail(); reset(); return false;">
+                    <div class="inputBox w50">
+                        <input type="text" id="name" required>
+                        <span>Nombre completo</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" id="email" required>
+                        <span>Correo electrónico</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" id="phone" required>
+                        <span>Número telefónico</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea id="message" required></textarea>
+                        <span>Escriba un mensaje...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

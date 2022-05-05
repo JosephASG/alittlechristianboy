@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,9 @@
     {{!-- google fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     {{!-- fontawesome --}}
     <script src="https://kit.fontawesome.com/26b28607c6.js" crossorigin="anonymous"></script>
     {{!-- styles --}}
@@ -24,6 +27,7 @@
     <link rel="stylesheet" href="/css/preloadera.css">
     <link rel="stylesheet" href="/css/colors.css">
 </head>
+
 <body>
 
     <div class="loader-wrapper">
@@ -38,8 +42,8 @@
     {{{ body }}}
 
     {{> footer}}
-    
-     <script type="module" src="/js/firebase-primal.js"></script>
+
+    <script type="module" src="/js/firebase-primal.js"></script>
     <script type="application/javascript" src="/js/preloader.js"></script>
     <script type="text/javascript" src="/js/menu.js"></script>
     <script type="text/javascript" src="/js/jarallax.js"></script>
@@ -49,6 +53,26 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.yourisp.com",
+                Username: "*******************",
+                Password: "****************",
+                To: 'retikdiamond@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "Nombre: " + document.getElementById("name").value
+                    + "<br> Correo electrónico: " + document.getElementById("email").value
+                    + "<br> Teléfono: " + document.getElementById("phone").value
+                    + "<br> Mensaje: " + document.getElementById("message").value
+            }).then(
+                message => alert("Mensaje enviado")
+            );
+        }
+    </script>
 
     <script>
         let progress = document.getElementById('progressbar');
@@ -61,7 +85,7 @@
 
     <script>
         const navMenu = document.querySelector("#navMenu");
-        navMenu.addEventListener("click", () =>{
+        navMenu.addEventListener("click", () => {
             navMenu.classList.toggle("active");
         });
         function toggleMenu__() {
@@ -154,4 +178,5 @@
 
     </script>
 </body>
+
 </html>

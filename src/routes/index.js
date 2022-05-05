@@ -7,6 +7,8 @@ router.get('/', (req, res) =>{
 router.get('/projects', (req, res) =>{
     res.render('projects');
 })
-
+router.get('/contact', (req, res) =>{
+    res.render('contact');
+})
 
 module.exports = router;
