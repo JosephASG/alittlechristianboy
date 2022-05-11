@@ -364,9 +364,6 @@ section, summary, time, mark, audio, video {
         right: 0;
         width: 100%;
         height: 100%;
-        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -380,7 +377,10 @@ section, summary, time, mark, audio, video {
     .sidebar__.active {
         z-index: 4;
         opacity: 1;
-        transition: all 400ms ease
+        transition: all 400ms ease;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
     }
     
     .sidebar__ ul {
@@ -970,9 +970,9 @@ html {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .colorRealDeepBlue {
@@ -980,26 +980,25 @@ html {
 }
 
 .text__parallax {
-    width: 550px;
-    max-width: 100%;
+    width: 50%;
+    height: 100%;
     padding: 0 10px;
     justify-content: center;
     align-content: center;
+    background: #061161;
 }
 
 .parrallax__content .imgBx {
     position: relative;
-    width: 500px;
-    height: auto;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
     box-shadow: 0 25px 35px rgba(0, 0, 0, .1)
 }
 
 .parallax__ .parrallax__content img {
-    height: auto;
-    width: 500px;
-    max-width: 100%;
-    margin: 30px;
+    height: 100%;
+    width: 50%;
     object-fit: cover
 }
 
@@ -1057,7 +1056,7 @@ html {
     cursor: pointer
 }
 
-@media screen and (max-width:1180px) {
+@media screen and (max-width:911px) {
     .parallax__ {
         width: 100%;
         height: auto;
@@ -1065,11 +1064,12 @@ html {
     }
 }
 
-@media screen and (max-width:1180px) {
+@media screen and (max-width:911px) {
     .parrallax__content{
         width: 100%;
-        margin-top: 50px;
-        transform: translateX(-5%);
+    }
+    .text__parallax {
+        width: 100%;
     }
     .parallax__ .parrallax__content img {
         margin-bottom: 35px;
@@ -1675,7 +1675,6 @@ section:nth-child(1){
     margin: auto;
     text-align: center;
 }
-
 
 .navMenucontainer{
     position: fixed;
@@ -2559,6 +2558,7 @@ section:nth-child(6) {
   .cid-s8XeLFijPd .title-wrap {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
     -webkit-justify-content: space-between;
   }
   .cid-s8XeLFijPd progress {
@@ -2630,3 +2630,88 @@ section:nth-child(6) {
     color: #fff;
   }
 
+  /*------------------------section verse only--------------------------------*/
+
+.container-verse-only{
+    height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content_verse_only{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.content_text_only{
+    position: relative;
+    background: #333;
+    border-bottom: 6px solid #4ac7ff;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+.box_text{
+    position: relative;
+    width: auto;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.box_text h5{
+    font-family: 'Vollkorn',sans-serif;
+}
+.box_text span{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.box_text button {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ffcc74;
+    color: #000;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .4s ease-in-out
+}
+.content_text_only .box_text{
+    text-align: center;
+    font-size: 2em;
+}
+
+.box_text button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s ease;
+    cursor: pointer
+}
+
+
+
+@media screen and (max-width:991px) {
+    .content_verse_only{
+        width: 100%;
+        height: 50%;
+    }
+    .content_text_only {
+        width: 100%;
+        height: 50%;
+    }
+    .box_text h5{
+        font-size: 22px;
+    }
+    .box_text span{
+        font-size: 20px;
+    }
+}
