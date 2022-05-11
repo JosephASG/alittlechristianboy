@@ -1,6 +1,6 @@
 @import url('//db.onlinewebfonts.com/c/b207fae73e1bde668238f6d9d0598cc9?family=GT+Sectra+Display+Medium');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -327,12 +327,6 @@ section, summary, time, mark, audio, video {
         text-align: left
     }
     
-    @media screen and (max-width:800px) {
-        .letras__primal {
-            font-size: 3.7rem
-        }
-    }
-    
     .container__section {
         position: relative;
         width: 100%;
@@ -345,17 +339,32 @@ section, summary, time, mark, audio, video {
     }
     
     .letras__primal__s {
-        margin-top: 50px;
-        font-family: 'Josefin Sans', sans-serif;
-        color: rgba(255, 255, 255, .5);
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        letter-spacing: 5px;
+        margin-top: 50px;  
+        color: #fff;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
         justify-content: center;
         text-align: center;
     }
+    .letras__primal__s p{
+        font-family: 'Vollkorn',sans-serif;
+    }
+    .letras__primal__s span{
+        font-family: 'Josefin Sans', sans-serif;
+    }
     
-    
+    @media screen and (max-width:991px) {
+        .letras__primal {
+            font-size: 3.7rem
+        }
+        .letras__primal__s {
+            margin-top: 50px;  
+            color: #fff;
+            font-size: 1.8rem;
+            justify-content: center;
+            text-align: center;
+        }
+    }
     
     .sidebar__ {
         font-family: 'Josefin Sans', sans-serif;
@@ -533,6 +542,9 @@ html {
     align-items: center;
     margin-left: 40px;
 }
+.container-navbar img{
+    width: 48px;
+}
 
 .container-navbar span{
     font-weight: 800;
@@ -546,6 +558,7 @@ html {
     padding: 3px 5px 2px 5px;
     text-align: center;
 }
+
 
 .section__f1 {
     top: 0;
@@ -1563,6 +1576,11 @@ section:nth-child(1){
     font-weight: 500;
     color: var(--text-primal);
     line-height: 1em;
+}
+.contenido .contenido-caja h2 span{
+    font-family: 'Vollkorn', 'Libre Baskerville','Times New Roman', sans-serif;
+    font-style: italic;
+    font-size: 30px;
 }
 @media screen and (max-width:650px){
     .body_slidebar li {
@@ -2768,58 +2786,94 @@ section:nth-child(6) {
 .line-stripe-4 {
   left: 90%; }
 
-/*----------------------------------------------*/
-.line-stripe-5,
-.line-stripe-6,
-.line-stripe-7,
-.line-stripe-8,
-.line-stripe-9{
-  height: 89%;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.03);
-  position: absolute;
-  bottom: 0; }
+/*------------------------section projects--------------------------------*/
 
-.line-stripe-5 {
-  left: 10%; }
+.section-projects-container{
+    background-image: url(https://keira.inaikas.com/wp-content/themes/keira/images/bg-paterns.png);
+    padding-top: 120px;
+}
 
-.line-stripe-5:before,
-.line-stripe-9:before {
-  top: 20%; }
+.container-projects{
+    height: 70vh;
+    min-width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.line-stripe-5:after {
-  bottom: 20%; }
+.content_projects_only{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
 
-.line-stripe-6:before {
-  top: 5%; }
+.content_text_projects{
+    position: relative;
+    background: #333;
+    border-bottom: 6px solid #4ac7ff;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
 
-.line-stripe-6:after {
-  bottom: 5%; }
+.box_text_projects{
+    position: relative;
+    width: auto;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.box_text_projects h5{
+    font-family: 'Vollkorn',sans-serif;
+}
+.box_text_projects span{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.box_text_projects button {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ffcc74;
+    color: #000;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .4s ease-in-out
+}
+.content_text_projects .box_text_projects{
+    text-align: center;
+    font-size: 2em;
+}
 
-.line-stripe-7:before {
-  top: 5%; }
+.box_text_projects button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s ease;
+    cursor: pointer
+}
 
-.line-stripe-7:after {
-  bottom: 5%; }
 
-.line-stripe-8:before {
-  top: 5%; }
 
-.line-stripe-8:after {
-  bottom: 5%; }
-
-.line-stripe-9:after {
-  bottom: 20%; }
-
-.line-stripe-6 {
-  left: 30%; }
-
-.line-stripe-7 {
-  left: 50%; }
-
-.line-stripe-8 {
-  left: 70%; }
-
-.line-stripe-9 {
-  left: 90%; }
-
+@media screen and (max-width:991px) {
+    .content_projects_only{
+        width: 100%;
+        height: 50%;
+    }
+    .content_text_projects {
+        width: 100%;
+        height: 50%;
+    }
+    .box_text_projects h5{
+        font-size: 19px;
+    }
+    .box_text_projects span{
+        font-size: 21px;
+    }
+}
