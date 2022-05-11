@@ -1082,13 +1082,6 @@ html {
     }
 }
 
-
-
-body {
-    overflow-y: scroll;
-}
-
-
 .gs_reveal {
     opacity: 0;
     visibility: hidden;
@@ -2248,8 +2241,14 @@ svg circle:nth-child(2){
     }
     
 }
+main{
+    background-image: url(https://keira.inaikas.com/wp-content/themes/keira/images/bg-paterns.png);
+
+}
 body {
-    background:#121212  ;    
+    *background-image: url(https://keira.inaikas.com/wp-content/themes/keira/images/bg-paterns.png);
+    background-color:#121212  ;  
+    overflow-y: scroll;  
 }
 
 .colorJP {
@@ -2715,3 +2714,112 @@ section:nth-child(6) {
         font-size: 20px;
     }
 }
+.line-stripe-0,
+.line-stripe-1,
+.line-stripe-2,
+.line-stripe-3,
+.line-stripe-4{
+  height: 89%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  bottom: 0; }
+
+.line-stripe-0 {
+  left: 10%; }
+
+.line-stripe-0:before,
+.line-stripe-4:before {
+  top: 20%; }
+
+.line-stripe-0:after {
+  bottom: 20%; }
+
+.line-stripe-1:before {
+  top: 5%; }
+
+.line-stripe-1:after {
+  bottom: 5%; }
+
+.line-stripe-2:before {
+  top: 5%; }
+
+.line-stripe-2:after {
+  bottom: 5%; }
+
+.line-stripe-3:before {
+  top: 5%; }
+
+.line-stripe-3:after {
+  bottom: 5%; }
+
+.line-stripe-4:after {
+  bottom: 20%; }
+
+.line-stripe-1 {
+  left: 30%; }
+
+.line-stripe-2 {
+  left: 50%; }
+
+.line-stripe-3 {
+  left: 70%; }
+
+.line-stripe-4 {
+  left: 90%; }
+
+/*----------------------------------------------*/
+.line-stripe-5,
+.line-stripe-6,
+.line-stripe-7,
+.line-stripe-8,
+.line-stripe-9{
+  height: 89%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  bottom: 0; }
+
+.line-stripe-5 {
+  left: 10%; }
+
+.line-stripe-5:before,
+.line-stripe-9:before {
+  top: 20%; }
+
+.line-stripe-5:after {
+  bottom: 20%; }
+
+.line-stripe-6:before {
+  top: 5%; }
+
+.line-stripe-6:after {
+  bottom: 5%; }
+
+.line-stripe-7:before {
+  top: 5%; }
+
+.line-stripe-7:after {
+  bottom: 5%; }
+
+.line-stripe-8:before {
+  top: 5%; }
+
+.line-stripe-8:after {
+  bottom: 5%; }
+
+.line-stripe-9:after {
+  bottom: 20%; }
+
+.line-stripe-6 {
+  left: 30%; }
+
+.line-stripe-7 {
+  left: 50%; }
+
+.line-stripe-8 {
+  left: 70%; }
+
+.line-stripe-9 {
+  left: 90%; }
+
