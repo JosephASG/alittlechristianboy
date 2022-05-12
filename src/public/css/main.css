@@ -2792,7 +2792,27 @@ section:nth-child(6) {
     background-image: url(https://keira.inaikas.com/wp-content/themes/keira/images/bg-paterns.png);
     padding-top: 120px;
 }
-
+.container_tittle_projects{
+    width: 100%;
+    height: auto;
+}
+.content_tittle_projects{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+.content_tittle_projects h3{
+    position: relative;
+    width: auto;
+    color: #fff;
+    font-family: 'Vollkorn',sans-serif;
+    text-align: center;
+    font-size: 3em;
+    padding: 10px 0 10px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(5px);
+}
 .container-projects{
     height: 70vh;
     min-width: 100%;
