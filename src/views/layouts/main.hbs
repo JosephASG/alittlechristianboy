@@ -96,7 +96,7 @@
 
             Email.send({
                 SecureToken: "c54bdd29-abec-4ba7-aff7-32cfbdea7c43",
-                To: 'retikdiamond@gmail.com',
+                To: 'alexis200123@outlook.es',
                 From: document.getElementById("email").value,
                 Subject: "Nuevo Mensaje",
                 Body: "Nombre: " + document.getElementById("name").value
@@ -119,14 +119,25 @@
     </script>
 
     <script>
-        const navMenu = document.querySelector("#navMenu");
-        navMenu.addEventListener("click", () => {
-            navMenu.classList.toggle("active");
-        });
-        function toggleMenu__() {
-            const sidebar__ = document.querySelector(".sidebar__");
-            sidebar__.classList.toggle("active")
+        const navMenu = document.getElementById('navMenu');
+        const header = document.getElementById('header');
+        const navbar_side = document.getElementById('navbar');
+        const sidebar__ = document.querySelector(".sidebar__");
+
+        document.onclick = function(e){
+            if((e.target.id !== 'header') && (e.target.id !== 'navMenu') && (e.target.id !== 'sidebar__')){
+                navMenu.classList.remove('active');                
+                sidebar__.classList.remove('active');
+            }
         }
+
+        navMenu.onclick = function(){
+            navMenu.classList.toggle("active");
+            sidebar__.classList.toggle("active");
+        }
+        /*function toggleMenu__() {
+            sidebar__.classList.toggle("active")
+        }*/
     </script>
 
     <script>

@@ -384,6 +384,7 @@ section, summary, time, mark, audio, video {
     }
     
     .sidebar__.active {
+        position: fixed;
         z-index: 4;
         opacity: 1;
         transition: all 400ms ease;
@@ -412,24 +413,14 @@ section, summary, time, mark, audio, video {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 4em;
+        font-weight: 900;
         line-height: 1em;
         color: transparent;
-        -webkit-text-stroke: 1px rgba(255, 255, 255, .5)
+        -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
     }
-    
-    .sidebar__ ul li a::before {
-        content: attr(data-text);
-        position: absolute;
-        color: var(--clr);
-        width: 0;
-        overflow: hidden;
-        transition: 1s;
-        border-right: 8px solid var(--clr)
-    }
-    
-    .sidebar__ ul li a:hover::before {
+        
+    .sidebar__ ul li a:hover {
         width: 100%;
-        -webkit-text-stroke: 1px var(--clr)
     }
     
     @media screen and (max-width:550px) {
@@ -438,6 +429,16 @@ section, summary, time, mark, audio, video {
         }
         .containerText{
             padding: 0 10px 0 10px;
+        }
+        .sidebar__ ul li a {
+            position: relative;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 3em;
+            font-weight: 900;
+            line-height: 1em;
+            color: #fff;
         }
     }
     
