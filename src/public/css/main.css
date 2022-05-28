@@ -419,14 +419,7 @@ section, summary, time, mark, audio, video {
         -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
     }
         
-    .sidebar__ ul li a:hover {
-        width: 100%;
-    }
-    
     @media screen and (max-width:550px) {
-        .sidebar__ ul li a {
-            font-size: 2em
-        }
         .containerText{
             padding: 0 10px 0 10px;
         }
@@ -435,7 +428,7 @@ section, summary, time, mark, audio, video {
             letter-spacing: 2px;
             text-transform: uppercase;
             text-decoration: none;
-            font-size: 3em;
+            font-size: 2em;
             font-weight: 900;
             line-height: 1em;
             color: #fff;
@@ -1719,13 +1712,15 @@ section:nth-child(1){
 #navMenu.active > span:nth-child(2){
     width: 0;
 }
-#navMenu > span:nth-child(2){
-    transform: translateX(30%);
-}
-#navMenu:hover > span:nth-child(2){
-    transform: translateX(0);
-}
+@media screen and (min-width:992px){
+    #navMenu > span:nth-child(2){
+        transform: translateX(30%);
+    }
 
+    #navMenu:hover > span:nth-child(2){
+        transform: translateX(0);
+    }
+}
 #navMenu.active > span:nth-child(1),
 #navMenu.active > span:nth-child(3){
     transition-delay: .4s;
@@ -1744,11 +1739,6 @@ section:nth-child(1){
 
 .toggle__:hover #navMenu.active > span:nth-child(2){
     transform: translateX(20%);
-}
-
-.toggle__:hover {
-    transform: scale(1.15);
-    transition: all 300ms ease
 }
 
 .toggle__.active {
