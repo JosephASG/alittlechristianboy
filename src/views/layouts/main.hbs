@@ -119,25 +119,18 @@
     </script>
 
     <script>
-        const navMenu = document.getElementById('navMenu');
-        const header = document.getElementById('header');
-        const navbar_side = document.getElementById('navbar');
+        const navMenu = document.querySelector("#navMenu");
         const sidebar__ = document.querySelector(".sidebar__");
+        const item_navbar = document.querySelector("#item_navbar");
 
-        document.onclick = function(e){
-            if((e.target.id !== 'header') && (e.target.id !== 'navMenu') && (e.target.id !== 'sidebar__')){
-                navMenu.classList.remove('active');                
-                sidebar__.classList.remove('active');
-            }
-        }
-
-        navMenu.onclick = function(){
+        navMenu.addEventListener("click", () => {
             navMenu.classList.toggle("active");
             sidebar__.classList.toggle("active");
-        }
-        /*function toggleMenu__() {
-            sidebar__.classList.toggle("active")
-        }*/
+        });
+        item_navbar.addEventListener("click", () => {
+            navMenu.classList.remove('active');
+            sidebar__.classList.remove('active');
+        });
     </script>
 
     <script>
