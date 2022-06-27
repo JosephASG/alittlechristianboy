@@ -214,17 +214,32 @@ section, summary, time, mark, audio, video {
     #nav__footer a:after {
         content: '';
         position: absolute;
-        background-color: #1e67c7;
         border-radius: 20px;
         height: 3px;
         width: 0;
         left: 0;
         bottom: 7px;
-        transition: 0.3s
+        background-color: #f25757;
+        transition: all .25s cubic-bezier(.694,.048,.335,1);
+    }
+    #nav__footer a:before {
+        content: '';
+        position: absolute;
+        border-radius: 20px;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 7px;
+        background-color: #235aa6;
+        transition: all .25s cubic-bezier(.694,.048,.335,1) .15s;
     }
     
     #nav__footer a:hover {
         color: #fff
+    }
+    #nav__footer a:hover:before {
+        width: 100%;
+        background-color: #1e67c7
     }
     
     #nav__footer a:hover:after {
@@ -2621,7 +2636,7 @@ section:nth-child(6) {
   }
   .cid-s8XeLFijPd .progress4 .progressbar-number:before {
     color: #fff;
-    content: '16';
+    content: '40';
   }
   .cid-s8XeLFijPd .progress5 .progressbar-number:before {
     content: '60';
